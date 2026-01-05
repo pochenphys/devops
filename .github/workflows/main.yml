@@ -31,7 +31,6 @@ jobs:
           context: .
           push: true
           # 這裡會觸發 Dockerfile 內的所有階段，包含測試
-          target: final
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/flask-app:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/flask-app:${{ github.sha }}
