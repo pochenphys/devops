@@ -30,3 +30,4 @@ jobs:
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/flask-app:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/flask-app:${{ github.sha }}
+
